@@ -1,0 +1,182 @@
+1. Write a program to accept percentage from the user and display the grade according to the following 
+criteria: 
+Marks                 Grade 
+>90                    A 
+>80 and <=90           B 
+>=60 and <=80          c 
+below 60               d 
+ANS. marks= int(input('enter your marks'))
+            if marks>90:
+               print('you are in the grade A')
+            elif marks>80 and marks<90:
+               print('your in the  gread B')
+            elif marks>=60 and marks<80:
+               print('your in the  gread c')
+            else:
+                    print('below')
+        
+        
+
+
+2. Write a program to accept the cost price of a bike and display the road tax to be paid according to the 
+following criteria: 
+Tax             Cost Price(in Rs) 
+15%            >100000
+10%             50000 and <= 100000 
+5%             <= 50000 
+ANS. cost_price = int(input('Enter your cost price'))
+if cost_price>10000:
+     print('tex is 15% for your cost price')
+elif cost_price>5000 and cost_price<=10000:
+     print('tex is 10% for your cost price')
+elif cost_price<=5000:
+     print('tex is 5% for your cost price')
+else :
+     print('you are not eligible for tex')               
+             
+             
+3. Accept any city from the user and display monuments of that city. 
+City                   Monument 
+Delhi                  Red Fort 
+Agra                   Taj Mahal 
+Agra Jaipur            Jal Mahal 
+ANS.city = input('Enter your city')
+if city == 'Delhi':
+    print('red fort is the best plece to visite in delhi')
+elif city == 'Jaipur':
+    print('Jal Mahal is the best plece to visite in delhi')
+elif city == 'Agra':
+    print('Taj mahal is the best plece to visite in delhi')    
+else :
+    print('enter velid city')
+
+
+
+4. Check how many times a given number can be divided by 3 before it is less than or equal to 10. 
+ANS. 
+def division_count(number):
+    count = 0
+    while number > 10:
+        number = number / 3
+        count += 1
+    return count
+
+print(division_count(27)) # Output: 2
+
+
+
+
+5. Why and When to Use while Loop in Python give a detailed description with example 
+
+ANS. The while loop in Python is used to repeatedly execute a block of code as long as a given condition is true.
+It is useful when you want to repeat a set of statements an unknown number of times, until a certain condition is met.
+    count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+
+6. Use nested while loop to print 3 different pattern.
+
+ANS.
+1. Right triangle pattern:
+
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print("")
+
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+2. Reverse right triangle pattern:
+
+rows = 5
+for i in range(rows, 0, -1):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print("")
+
+# Output:
+# *****
+# ****
+# ***
+# **
+# *
+Diamond pattern:
+rows = 5
+for i in range(1, rows * 2):
+    for j in range(1, (rows * 2) - i):
+        print(end=" ")
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print("")
+
+for i in range(rows * 2, 0, -1):
+    for j in range(1, (rows * 2)
+   print(end=" ")
+    for j in range(1, i):
+        print("*", end=" ")
+    print("")
+
+# Output:
+#     *
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
+#  * * * *
+#   * * *
+#    * *
+#     *
+
+
+
+7. Reverse a while loop to display numbers from 10 to 1.
+ans.count =  10
+while  count>=1:
+    print(count)
+    count -= 1
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+
+8. Reverse a while loop to display numbers from 10 to 1 
+ANS.count =  10
+while  count>=1:
+    print(count)
+    count -= 1
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+
